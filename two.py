@@ -1,14 +1,8 @@
 #Write a Python program to remove and print every second number from a list of numbers until the
 #list becomes empty
-pos = 2-1
-idx= 0
-len_list = (len(int_list))
-while  len_list > 0:
-    idx = (pos + idx)% len_list
+myList = [1, 2, 34, 12, 77, 66]
 
-    #removes and prints the second number
-    print (int_list.pop(idx))
-    len_list -= 1
-
-    nums = [40,20,300,140,1,3]
-    remove_nums(nums)
+for position in range(len(myList)):  # loop through the list
+    if len(myList) > 1:              # checks the list length
+        removedItem = myList.pop(1)     # removes the second item
+print(removedItem)                  # prints the removed item.
